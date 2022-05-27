@@ -4,10 +4,6 @@ import ProductItem from "./productItem";
 export default class ProductList extends Component {
 
 
-  handleBuyProduct = (product) => {
-      console.log(product);
-  };
-
   render() {
     const { products, onSelect } = this.props;
 
@@ -19,7 +15,7 @@ export default class ProductList extends Component {
               key={item.id}
               product={item}
             
-              onSelect={this.handleBuyProduct}
+              onSelect={onSelect}
             />
           ))}
         </div>

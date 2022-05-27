@@ -8,7 +8,7 @@ export default class ShoesStore extends Component {
     productDetail: null,
   };
   handleBuyProduct = (product) => {
-    console.log(product);
+    console.log("ShoesShop ", product);
 
     this.setState({
       productDetail: product,
