@@ -8,17 +8,15 @@ export default class ShoesStore extends Component {
     super(props);
 
     this.state = {
-      productDetail: null,
+      productDetail: {},
     };
   }
   handleBuyProduct = (product) => {
-    // this.setState((state, props) => ({
-    //   productDetail: product,
-    // }), console.log(this.state.productDetail));
-  
-   this.setState({
-     productDetail : product
-   },console.log(this.state.productDetail))
+    this.setState(
+      {
+        productDetail:  product,
+      }
+    );
   };
   render() {
     return (

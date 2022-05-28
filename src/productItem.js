@@ -10,8 +10,11 @@ export default class ProductItem extends Component {
           <div className="card-body">
             <div className="card-title">{product.name}</div>
             <p className="card-text">{product.price}$</p>
+
             <button
               className="btn btn-dark"
+              data-toggle="modal"
+              data-target="#exampleModal"
               onClick={() => {
                 onSelect(product);
               }}
