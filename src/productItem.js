@@ -16,7 +16,7 @@ export default class ProductItem extends Component {
                 onSelect(product);
               }}
             >
-              Add to cart
+              Xem chi tiết
             </button>
           </div>
         </div>

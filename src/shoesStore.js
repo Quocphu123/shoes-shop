@@ -4,15 +4,21 @@ import data from "./data.json";
 import Modal from "./modal";
 
 export default class ShoesStore extends Component {
-  state = {
-    productDetail: null,
-  };
-  handleBuyProduct = (product) => {
-    console.log("ShoesShop ", product);
+  constructor(props) {
+    super(props);
 
-    this.setState({
-      productDetail: product,
-    });
+    this.state = {
+      productDetail: null,
+    };
+  }
+  handleBuyProduct = (product) => {
+    // this.setState((state, props) => ({
+    //   productDetail: product,
+    // }), console.log(this.state.productDetail));
+  
+   this.setState({
+     productDetail : product
+   },console.log(this.state.productDetail))
   };
   render() {
     return (
