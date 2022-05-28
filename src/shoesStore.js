@@ -25,7 +25,7 @@ export default class ShoesStore extends Component {
       <div>
         <h1 className="text-center my-4">Shoes Shop</h1>
         <ProductList products={data} onSelect={this.handleBuyProduct} />
-        <Modal content={this.state.productDetail} />
+        <Modal product={this.state.productDetail} />
       </div>
     );
   }
